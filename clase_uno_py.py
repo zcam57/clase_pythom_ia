@@ -110,6 +110,45 @@ b = 'mundo'
 c = a + ' ' + b
 print(c)
 
+# Capturar por pantalla
+
+nombre = input('Digite su nombre:')
+print('Hola', nombre)
+
+print('Digite su nombre:')
+nombre = input()
+print('Hola ', nombre)
+
+# HUA que sume dos numeros e imprima su resultado
+
+numero1 = input('Digite un numero: ')
+numero2 = input('Digite un numero: ')
+numero3 = int(numero1) + int(numero2)
+print('La suma es : ', numero3)
+
+numero_uno = float(input('Digite un numero: '))
+numero_dos = float(input('Digite un numero: '))
+suma = numero_uno + numero_dos
+# print('La suma es : ', suma)
+# print('La suma es : ', suma)
+print(f'La suma de los numeros {numero_uno} + {numero_dos} es {suma} ', suma)
+
+# HUA que lea un numero y lo eleve al cuadrado
+
+numero_uno = int(input('Digite un numero: '))
+elevado = numero_uno ** 2
+print(f'El numero {numero_uno} elevado a la 2 es  {elevado} ')
+
+# HUA que tome el valor de un producto , le aplique el 20%
+# de descueto , imprima le valor del producto inicial,
+# el valor con descuento y el valor ahorrado
+
+precio = float(input('Digite el precio del producto: '))
+descuento = precio ** 0.2
+total = precio - descuento
+print(f'El precio incial es de  ${precio: ,}  ')
+print(f'El valor ahorrado es de   ${descuento: ,}  ')
+print(f'El total a pagar es de   ${total: ,}  ')
 
 
 
