@@ -151,10 +151,13 @@ print(f'El valor ahorrado es de   ${descuento: ,}  ')
 print(f'El total a pagar es de   ${total: ,}  ')
 
 
-
-
-
-
+# HUA que calcule la masa de la siguiente fórmula:
+# Masa = (presión * volúmen) / (0.37 * (temperatura + 460))
+presion = float(input('Digite la presion: '))
+volumen = float(input('Digite el volumen: '))
+temperatura = float(input('Digite la temperatura: '))
+masa = (presion * volumen) / (0.37 * (temperatura + 460))
+print(f'La masa es :  {masa}  ')
 
 
 
