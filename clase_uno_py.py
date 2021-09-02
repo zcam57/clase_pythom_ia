@@ -229,6 +229,15 @@ print(f' Costo por tamaño de clasificado:  ${costotamaño: ,}  ')
 print(f' Costo por colores que contiene el clasificado:   ${costocolores: ,}')
 print(f' El total a pagar por el clasificado es de :  ${total: ,}  ')
 
+# 7 HUA Una empresa paga a sus empleados un bono por antigüedad que
+# consiste en $100.000 por el primer año laboral y $120.000 por cada
+# año siguiente. Realice un algoritmo que determine el monto del bono
+# a pagar a un trabajador que tiene varios años en la empresa.
+
+antiguedad = float(input('Cuantos años lleva trabajando en la empresa : '))
+bono = antiguedad * 120000
+print(f' Su bono de antiguedad  es de:  ${bono: ,}  ')
+
 
 
 
