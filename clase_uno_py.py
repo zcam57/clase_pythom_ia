@@ -210,6 +210,28 @@ print(f' Descuento por seguro forzoso:  ${Sforzoso: ,}  ')
 print(f' Descuento por caja de ahorro:  ${Cahorro: ,}  ')
 print(f' Su sueldo con descuentos obligatorios es de :  ${total: ,}  ')
 
+# 6 HUA El periódico el Informador cobra por un aviso clasificado un monto
+# que depende del número de palabras, tamaño en cetímetros y
+# número de colores. Cada palabra tiene un costo de $20.000, cada
+# centímetro tiene un costo de $15.000 y cada color tiene un costo de
+# $25.000. Realice un algoritmo que determine el monto a pagar por un
+# aviso clasificado.
+
+palabras = float(input('Numero de palabras que contiene el clasificado: '))
+tamaño = float(input('Inregres cuantos centimetro ocupara su clasificado:'))
+colores = float(input('Cuantos colores contiene su anuncio: '))
+costopalabras = palabras * 20000
+costotamaño = tamaño * 15000
+costocolores = colores * 25000
+total = costopalabras + costotamaño + costocolores
+print(f' Costo por todas las palabras :  ${costopalabras: ,}  ')
+print(f' Costo por tamaño de clasificado:  ${costotamaño: ,}  ')
+print(f' Costo por colores que contiene el clasificado:   ${costocolores: ,}')
+print(f' El total a pagar por el clasificado es de :  ${total: ,}  ')
+
+
+
+
 
 
 
