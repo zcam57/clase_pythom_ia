@@ -151,7 +151,7 @@ print(f'El valor ahorrado es de   ${descuento: ,}  ')
 print(f'El total a pagar es de   ${total: ,}  ')
 
 
-# HUA que calcule la masa de la siguiente fórmula:
+# 1 HUA que calcule la masa de la siguiente fórmula:
 # Masa = (presión * volúmen) / (0.37 * (temperatura + 460))
 presion = float(input('Digite la presion: '))
 volumen = float(input('Digite el volumen: '))
@@ -159,14 +159,14 @@ temperatura = float(input('Digite la temperatura: '))
 masa = (presion * volumen) / (0.37 * (temperatura + 460))
 print(f'La masa es :  {masa}  ')
 
-# HUA Calcular el número de pulsaciones que una persona debe tener por
+# 2 HUA Calcular el número de pulsaciones que una persona debe tener por
 # cada 10 segundos de ejercicio, si la fórmula es:
 # Num. Pulsaciones = (200 – edad) /10.
 edad = float(input('Digite su  edad : '))
 Pulsaciones = (200 - edad) / 10.
 print(f' Su numero de pulsaciones por cada 10 segundos es  :  {Pulsaciones}  ')
 
-# HUA Tres personas deciden invertir su dinero para fundar una empresa.
+# 3 HUA Tres personas deciden invertir su dinero para fundar una empresa.
 # Cada una de ellas invierte una cantidad distinta. Obtener el porcentaje
 # que cada quien invierte con respecto a la cantidad total invertida.
 
@@ -177,12 +177,12 @@ total = invercion1 + invercion2 + invercion3
 porcentaje1 = (invercion1 * 100) / total
 porcentaje2 = (invercion2 * 100) / total
 porcentaje3 = (invercion3 * 100) / total
-print(f' el total dinero invertido es de   :  {total}  ')
-print(f' el porsentaje de inversion de la primera persona es de: {porcentaje1}  ')
-print(f' el porsentaje de inversion de la segunda persona es de: {porcentaje2}  ')
-print(f' el porsentaje de inversion de la tercera persona es de: {porcentaje3}  ')
+print(f'el total dinero invertido es de   :  {total} ')
+print(f'el porsentaje de inversion de la primera persona es de: {porcentaje1}')
+print(f'el porsentaje de inversion de la segunda persona es de: {porcentaje2}')
+print(f'el porsentaje de inversion de la tercera persona es de: {porcentaje3}')
 
-# HUA Un banco da a sus ahorradores un interes de 1.5% sobre el monto
+# 4 HUA Un banco da a sus ahorradores un interes de 1.5% sobre el monto
 # ahorrado. Teniendo como dato de entrada el saldo inicial del
 # ahorrador determine el saldo final.
 
@@ -192,6 +192,23 @@ total = ganancia + dinero
 print(f' El interes generado es de:  ${ganancia: ,}  ')
 print(f' El total en su cuenta es  de:  ${total: ,}  ')
 
+# 5 HUA Una empresa le hace los siguientes descuentos sobre el sueldo base
+# a sus trabajadores: 1% por ley de politica pública, 4% por seguro
+# social, 0.5% por seguro forzoso y 5% por caja de ahorro. Realice un
+# algoritmo que determine el monto de cada descuento y el monto total
+# a pagar al trabajador.
+
+sueldo = float(input('Digite el total de su sueldo: '))
+Ppublica = sueldo * 0.01
+Ssocial = sueldo * 0.04
+Sforzoso = sueldo * 0.005
+Cahorro = sueldo * 0.05
+total = sueldo - (sueldo * 0.105)
+print(f' Descuento por politica publica:  ${Ppublica: ,}  ')
+print(f' Descuento por seguro social:  ${Ssocial: ,}  ')
+print(f' Descuento por seguro forzoso:  ${Sforzoso: ,}  ')
+print(f' Descuento por caja de ahorro:  ${Cahorro: ,}  ')
+print(f' Su sueldo con descuentos obligatorios es de :  ${total: ,}  ')
 
 
 
