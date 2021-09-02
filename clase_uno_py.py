@@ -286,11 +286,20 @@ presupuesto = float(input('Ingrese el presupuesto total del hospital : '))
 ginecologia = presupuesto * 0.40
 traumatologia = presupuesto * 0.30
 pediatria = presupuesto * 0.30
-print(f' El presupuesto de Ginecologia es de  :  ${ginecologia: ,}  ')
+presupuesto = float(input('Ingrese el presupuesto total del hospital : '))
 print(f' El presupuesto de Traumatologia es de  :  ${traumatologia: ,}  ')
 print(f' El presupuesto de Pediatria es de   :  ${pediatria: ,}  ')
 
+# 12 HUA Una video tienda alquila DVD a $1.500 el día. Tiene una promoción
+# que consiste en dejar gratis el alquiler de una película. Realice un
+# algoritmo que teniendo como dato de entrada el total de películas
+# alquiladas, y el número de días de alquiler, determine el monto a
+# pagar
 
+cantidad = float(input('Ingrese la cantidad de peliculas que alquirara: '))
+tiempo = float(input('Ingrese la cantidad de dias que alquirara las peliculas:'))
+total = (tiempo * 1500) * (cantidad - 1)
+presupuesto = float(input(f'El total a pagar por el alquiler de las peliculas es de  : ${total : ,} '))
 
 
 
