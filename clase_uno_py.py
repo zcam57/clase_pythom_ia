@@ -258,9 +258,24 @@ final = float(input('Digite el monto final de la tarjeta  : '))
 total = inicial - final
 recargo = total * 0.2
 pagar = total + recargo
-print(f' Usteda gato  :  ${total: ,}  ')
+print(f' Usted gasto  :  ${total: ,}  ')
 print(f' Cobro de  recargo por uso de la tarjeta  :  ${recargo: ,}  ')
 print(f' El total a pagar seria de :  ${pagar: ,}  ')
+
+# 10 HUA En una fototienda cobran por el revelado de un rollo $1.500 por cada
+# foto. Realice un algoritmo que determine el monto a pagar por un
+# revelado completo sabiendo que adiconalmente le cobran el IVA
+# (16%).
+
+cantidad = float(input('Cuantas fotos contiene su rollo  : '))
+pagar = cantidad * 1500
+iva = pagar * 0.16
+total = pagar + iva
+print(f' La cantidad a pagar por todas sus fotos es de   :  ${pagar: ,}  ')
+print(f' El iva a pagar es de 16% lo que equivale a  :  ${iva: ,}  ')
+print(f' El total a pagar incluido iva es de  :  ${total: ,}  ')
+
+
 
 
 
