@@ -238,6 +238,17 @@ antiguedad = float(input('Cuantos años lleva trabajando en la empresa : '))
 bono = antiguedad * 120000
 print(f' Su bono de antiguedad  es de:  ${bono: ,}  ')
 
+# 8 HUA Una Universidad le paga a sus profesores $20.000 la hora y le hace
+# un descuento del 5% por concepto de caja de ahorro. Determine el
+# monto del descuento y el monto total a pagar al profesor.
+
+horas = float(input('Cuantas hora trabajo : '))
+total = horas * 20000
+descuento = total * 0.05
+print(f' Su total a pagar es de :  ${total: ,}  ')
+print(f' Su Descuento por caja de ahorro es de :  ${descuento: ,}  ')
+
+
 
 
 
