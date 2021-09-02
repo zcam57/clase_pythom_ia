@@ -26,7 +26,7 @@ b = 2
 c = a + b
 print(c)
 
-#Resta
+# Resta
 
 a = 5
 b = 2
@@ -144,7 +144,7 @@ print(f'El numero {numero_uno} elevado a la 2 es  {elevado} ')
 # el valor con descuento y el valor ahorrado
 
 precio = float(input('Digite el precio del producto: '))
-descuento = precio ** 0.2
+descuento = precio * 0.2
 total = precio - descuento
 print(f'El precio incial es de  ${precio: ,}  ')
 print(f'El valor ahorrado es de   ${descuento: ,}  ')
@@ -181,6 +181,17 @@ print(f' el total dinero invertido es de   :  {total}  ')
 print(f' el porsentaje de inversion de la primera persona es de: {porcentaje1}  ')
 print(f' el porsentaje de inversion de la segunda persona es de: {porcentaje2}  ')
 print(f' el porsentaje de inversion de la tercera persona es de: {porcentaje3}  ')
+
+# HUA Un banco da a sus ahorradores un interes de 1.5% sobre el monto
+# ahorrado. Teniendo como dato de entrada el saldo inicial del
+# ahorrador determine el saldo final.
+
+dinero = float(input('Digite la cantidad de dinero Inicial: '))
+ganancia = (dinero * 0.015)
+total = ganancia + dinero
+print(f' El interes generado es de:  ${ganancia: ,}  ')
+print(f' El total en su cuenta es  de:  ${total: ,}  ')
+
 
 
 
