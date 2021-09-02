@@ -301,7 +301,18 @@ tiempo = float(input('Ingrese la cantidad de dias que alquirara las peliculas:')
 total = (tiempo * 1500) * (cantidad - 1)
 print(f'El total a pagar por el alquiler de las peliculas es de  : ${total : ,} ')
 
+# 13 HUA Una Agencia de viajes cobra por un Tour a Cartagena $25.000
+# diarios por persona. Realice un algoritmo que determine el monto a
+# pagar por una familia que desee realizar dicho Tour sabiendo que
+# también cobran el 12% de IVA.
 
+familia = float(input('Ingrese la cantidad de integrantes de su familia: '))
+dias = float(input('Ingrese la cantidad de dias que piensa hacer el tour: '))
+total = (familia * 25000) * dias
+iva = total * 0.12
+suma = total + iva
+print(f'El total a pagar por el tour es de  : ${total : ,} ')
+print(f'El total a pagar por el tour mas iva es de  : ${total : ,} + ${iva: ,}  =  ${suma: ,}')
 
 
 
