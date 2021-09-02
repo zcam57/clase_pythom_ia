@@ -166,9 +166,21 @@ edad = float(input('Digite su  edad : '))
 Pulsaciones = (200 - edad) / 10.
 print(f' Su numero de pulsaciones por cada 10 segundos es  :  {Pulsaciones}  ')
 
+# HUA Tres personas deciden invertir su dinero para fundar una empresa.
+# Cada una de ellas invierte una cantidad distinta. Obtener el porcentaje
+# que cada quien invierte con respecto a la cantidad total invertida.
 
-
-
+invercion1 = float(input('Digite la cantidad de dinero que desea invertir: '))
+invercion2 = float(input('Digite la cantidad de dinero que desea invertir: '))
+invercion3 = float(input('Digite la cantidad de dinero que desea invertir: '))
+total = invercion1 + invercion2 + invercion3
+porcentaje1 = (invercion1 * 100) / total
+porcentaje2 = (invercion2 * 100) / total
+porcentaje3 = (invercion3 * 100) / total
+print(f' el total dinero invertido es de   :  {total}  ')
+print(f' el porsentaje de inversion de la primera persona es de: {porcentaje1}  ')
+print(f' el porsentaje de inversion de la segunda persona es de: {porcentaje2}  ')
+print(f' el porsentaje de inversion de la tercera persona es de: {porcentaje3}  ')
 
 
 
