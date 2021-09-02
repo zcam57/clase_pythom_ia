@@ -275,8 +275,20 @@ print(f' La cantidad a pagar por todas sus fotos es de   :  ${pagar: ,}  ')
 print(f' El iva a pagar es de 16% lo que equivale a  :  ${iva: ,}  ')
 print(f' El total a pagar incluido iva es de  :  ${total: ,}  ')
 
+# 11 HUA En un hospital existen tres áreas: Ginecología, Pediatría y
+# Traumatología. El presupuesto anual del hospital se reparte
+# conforme a la siguiente tabla: ginecologia  40% , traumatologia 30%,
+# pediatria 30% , Obtener la cantidad de dinero que recibirá cada área,
+# para cualquier monto presupuestal.
 
 
+presupuesto = float(input('Ingrese el presupuesto total del hospital : '))
+ginecologia = presupuesto * 0.40
+traumatologia = presupuesto * 0.30
+pediatria = presupuesto * 0.30
+print(f' El presupuesto de Ginecologia es de  :  ${ginecologia: ,}  ')
+print(f' El presupuesto de Traumatologia es de  :  ${traumatologia: ,}  ')
+print(f' El presupuesto de Pediatria es de   :  ${pediatria: ,}  ')
 
 
 
