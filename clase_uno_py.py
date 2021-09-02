@@ -248,6 +248,19 @@ descuento = total * 0.05
 print(f' Su total a pagar es de :  ${total: ,}  ')
 print(f' Su Descuento por caja de ahorro es de :  ${descuento: ,}  ')
 
+# 9 HUA Un centro de comunicaciones alquilan tarjetas para realizar llamadas
+# y cobran el monto consumido de la tarjeta mas un recargo del 20%.
+# Teniendo como dato de entrada el monto inicial y el monto final de la
+# tarjeta, determine el costo de la llamada.
+
+inicial = float(input('Digite el monto inicial de la tarjeta  : '))
+final = float(input('Digite el monto final de la tarjeta  : '))
+total = inicial - final
+recargo = total * 0.2
+pagar = total + recargo
+print(f' Usteda gato  :  ${total: ,}  ')
+print(f' Cobro de  recargo por uso de la tarjeta  :  ${recargo: ,}  ')
+print(f' El total a pagar seria de :  ${pagar: ,}  ')
 
 
 
