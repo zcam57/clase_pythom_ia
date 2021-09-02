@@ -299,7 +299,17 @@ print(f' El presupuesto de Pediatria es de   :  ${pediatria: ,}  ')
 cantidad = float(input('Ingrese la cantidad de peliculas que alquirara: '))
 tiempo = float(input('Ingrese la cantidad de dias que alquirara las peliculas:'))
 total = (tiempo * 1500) * (cantidad - 1)
-presupuesto = float(input(f'El total a pagar por el alquiler de las peliculas es de  : ${total : ,} '))
+print(f'El total a pagar por el alquiler de las peliculas es de  : ${total : ,} ')
+
+
+
+
+
+
+
+
+
+
 
 
 
