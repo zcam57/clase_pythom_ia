@@ -357,14 +357,11 @@ y = (((z + 2 - n) ** 2 * m + 8 / 2 - 30) / 2 * 5 - 3) ** 5 + 15 * 3 - 9 / 3
 print(f' El resultado de "y"  es igual a   : {y : ,} ')
 
 
+# parte 1-3  Calcule el valor de Y indicando paso a paso como llegó al
+# resultado
 
-
-
-
-
-
-
-
-
-
-
+z = 5
+n = ((8 + 2 - 4) ** 2 * 5 + 8 + 7 / 2 - 30 * 5) / 2 * 5 - 3
+m = z ** 2 * 3 + n
+y = ((((z + 2 - n) ** 2 * m + 8 / 2 - 30) / 2 * 5 - 3) ** 5 + 15 * 3 - 9 / 3) ** 2 - 5 / 4
+print(f' El resultado de "y"  es igual a   : {y : ,} ')
