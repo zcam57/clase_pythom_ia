@@ -341,6 +341,13 @@ print(f'El total a pagar por su prestamo es de   : ${interes : ,} ')
 print(f'El monto a pagar por cuotas especiale los primeros 4 meses es de  : ${Cespeciales: ,} ')
 print(f'El monto a pagar por cuotas ordinarias los siguientes 20 meses es de   : ${Cordinarias : ,} ')
 
+# parte 1-1  Calcule el valor de Y indicando paso a paso como llegó al 
+# resultado
+
+y = ( (5+2-5) ** 2 * 5+8/2 -30 ) / 2 * 5 -3
+print(f' El resultado de "y"  es igual a   : ${y : ,} ')
+
+
 
 
 
