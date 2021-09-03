@@ -323,6 +323,24 @@ dias = float(input('Ingrese cuantos dias se quedara en el hotel: '))
 total = 200000 * dias
 print(f'El total a pagar por su estadia en el hotel es de   : ${total : ,} ')
 
+# 15 HUA El banco del Pueblo da microcréditos a empresarios para ser
+# cancelados en un lapso de 2 años (24 meses). Al monto del
+# préstamo se le cobra un interés del 24%. El empresario debe pagar
+# la mitad del préstamo en 4 cuotas especiales y la otra mitad en 20
+# cuotas ordinarias. Realice un algoritmo que teniendo como dato de
+# entrada el monto del préstamo, determine el monto total a pagar por
+# el préstamo, el monto de las cuotas especiales y el monto de las
+# cuotas ordinarias.
+
+prestamo = float(input('Ingrese el monto de su prestamo : '))
+interes = (prestamo * 0.24) + prestamo
+especial = interes * 0.5
+Cordinarias = (interes - especial) / 20
+Cespeciales = especial / 4
+print(f'El total a pagar por su prestamo es de   : ${interes : ,} ')
+print(f'El monto a pagar por cuotas especiale los primeros 4 meses es de  : ${Cespeciales: ,} ')
+print(f'El monto a pagar por cuotas ordinarias los siguientes 20 meses es de   : ${Cordinarias : ,} ')
+
 
 
 
