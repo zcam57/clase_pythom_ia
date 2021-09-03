@@ -299,7 +299,7 @@ print(f' El presupuesto de Pediatria es de   :  ${pediatria: ,}  ')
 cantidad = float(input('Ingrese la cantidad de peliculas que alquirara: '))
 tiempo = float(input('Ingrese la cantidad de dias que alquirara las peliculas:'))
 total = (tiempo * 1500) * (cantidad - 1)
-print(f'El total a pagar por el alquiler de las peliculas es de  : ${total : ,} ')
+print(f'El total a pagar por el alquiler de las peliculas es de  : ${total : ,}')
 
 # 13 HUA Una Agencia de viajes cobra por un Tour a Cartagena $25.000
 # diarios por persona. Realice un algoritmo que determine el monto a
@@ -314,9 +314,14 @@ suma = total + iva
 print(f'El total a pagar por el tour es de  : ${total : ,} ')
 print(f'El total a pagar por el tour mas iva es de  : ${total : ,} + ${iva: ,}  =  ${suma: ,}')
 
+# 14 HUA Un Hotel 5 Estrellas de Santa Marta tiene una promoción para sus
+# clientes. Cobra por una habitación $100.000 el primer día y por el
+# resto $200.000 por día. Realice un algoritmo que determine el valor
+# total a pagar por la habitación si la estadía fue de varios días.
 
-
-
+dias = float(input('Ingrese cuantos dias se quedara en el hotel: '))
+total = 200000 * dias
+print(f'El total a pagar por su estadia en el hotel es de   : ${total : ,} ')
 
 
 
