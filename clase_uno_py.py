@@ -345,7 +345,19 @@ print(f'El monto a pagar por cuotas ordinarias los siguientes 20 meses es de   :
 # resultado
 
 y = ((5 + 2 - 5) ** 2 * 5 + 8 / 2 - 30) / 2 * 5 - 3
-print(f' El resultado de "y"  es igual a   : {y : ,} ')
+p1 = 5 + 2 - 5
+p2 = p1 ** 2
+p3 = p2 *5
+p4 = p3 + 8/2
+p5 = p4 - 30
+p6 = p5 / 2 
+print(f' El resultado de la primera parte  5 + 2 - 5  : {p1 : ,} ')
+print(f' El resultado de la segunda parte  (5 + 2 - 5) ** 2  : {p2 : ,} ')
+print(f' El resultado de la tercera parte  (5 + 2 - 5) ** 2 * 5  : {p3 : ,} ')
+print(f' El resultado de la cuarta parte ((5 + 2 - 5) ** 2 * 5 + 8 / 2 - 30)  : {p4 : ,} ')
+print(f' El resultado de la quinta parte  ((5 + 2 - 5) ** 2 * 5 + 8 / 2 - 30) / 2 : {p5 : ,} ')
+print(f' El resultado de la septima parte  : {p6 : ,} ')
+print(f' El resultado de final de "y"  es igual a   : {y : ,} ')
 
 # parte 1-2  Calcule el valor de Y indicando paso a paso como llegó al
 # resultado
@@ -354,6 +366,7 @@ z = 5
 n = 3
 m = z - n
 y = (((z + 2 - n) ** 2 * m + 8 / 2 - 30) / 2 * 5 - 3) ** 5 + 15 * 3 - 9 / 3
+print(f' El resultado de "m"  es igual a   : {m : ,} ')
 print(f' El resultado de "y"  es igual a   : {y : ,} ')
 
 
