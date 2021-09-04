@@ -356,7 +356,7 @@ print(f' El resultado de la segunda parte  (5 + 2 - 5) ** 2  : {p2 : ,} ')
 print(f' El resultado de la tercera parte  (5 + 2 - 5) ** 2 * 5  : {p3 : ,} ')
 print(f' El resultado de la cuarta parte ((5 + 2 - 5) ** 2 * 5 + 8 / 2 - 30)  : {p4 : ,} ')
 print(f' El resultado de la quinta parte  ((5 + 2 - 5) ** 2 * 5 + 8 / 2 - 30) / 2 : {p5 : ,} ')
-print(f' El resultado de la septima parte  : {p6 : ,} ')
+print(f' El resultado de la septima parte ((5 + 2 - 5) ** 2 * 5 + 8 / 2 - 30) / 2 : {p6 : ,} ')
 print(f' El resultado de final de "y"  es igual a   : {y : ,} ')
 
 # parte 1-2  Calcule el valor de Y indicando paso a paso como llegó al
@@ -366,6 +366,18 @@ z = 5
 n = 3
 m = z - n
 y = (((z + 2 - n) ** 2 * m + 8 / 2 - 30) / 2 * 5 - 3) ** 5 + 15 * 3 - 9 / 3
+p1 = z + 2 - n
+p2 = p1 ** 2
+p3 = p2 * m + 8 / 2 - 30
+p4 = p3 / 2 * 5 - 3
+p5 = p4 ** 5
+p6 = p5  + 15
+print(f' El resultado de la primera parte  z + 2 - n : {p1 : ,} ')
+print(f' El resultado de la segunda parte  (z + 2 - n) ** 2 : {p2 : ,} ')
+print(f' El resultado de la tercera parte  ((z + 2 - n) ** 2 * m + 8 / 2 - 30) : {p3 : ,} ')
+print(f' El resultado de la cuarta parte (((z + 2 - n) ** 2 * m + 8 / 2 - 30) / 2 * 5 - 3)  : {p4 : ,} ')
+print(f' El resultado de la quinta parte  (((z + 2 - n) ** 2 * m + 8 / 2 - 30) / 2 * 5 - 3) ** 5  : {p5 : ,} ')
+print(f' El resultado de la septima parte (((z + 2 - n) ** 2 * m + 8 / 2 - 30) / 2 * 5 - 3) ** 5 + 15 : {p6 : ,} ')
 print(f' El resultado de "m"  es igual a   : {m : ,} ')
 print(f' El resultado de "y"  es igual a   : {y : ,} ')
 
