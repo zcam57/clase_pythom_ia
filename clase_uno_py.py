@@ -389,4 +389,39 @@ z = 5
 n = ((8 + 2 - 4) ** 2 * 5 + 8 + 7 / 2 - 30 * 5) / 2 * 5 - 3
 m = z ** 2 * 3 + n
 y = ((((z + 2 - n) ** 2 * m + 8 / 2 - 30) / 2 * 5 - 3) ** 5 + 15 * 3 - 9 / 3) ** 2 - 5 / 4
-print(f' El resultado de "y"  es igual a   : {y : ,} ')
+#  resultado de n 
+p1 = (8 + 2 - 4)
+p2 = p1 ** 2
+p3 = p2 * 5
+p4 =  p3 8 + 7 / 2
+p5 = p4 - 30 * 5
+# resultado de m 
+p6 = z ** 2
+p7 = p6 * 3 + n
+# resultado de y
+p8 = z + 2 - n
+p9 = p8 ** 2
+p10 = p9 * m + 8 / 2 - 30
+p11 = p10 / 2 * 5 - 3
+p12 = p11 ** 5
+p13 = p12 + 15
+p14 = p1 **3 - 9 / 3
+print(f' El resultado de "n" en la primera parte es 8 + 2 - 4  : {p1 : ,} ')
+print(f' El resultado de "n" en la segunda parte es  (8 + 2 - 4) ** 2 : {p2 : ,} ')
+print(f' El resultado de "n" en la tercera parte es (8 + 2 - 4) ** 2 * 5   : {p3 : ,} ')
+print(f' El resultado de "n" en la cuarta parte es  (8 + 2 - 4) ** 2 * 5 + 8 + 7 / 2 : {p4 : ,} ')
+print(f' El resultado de "n" en la quinta parte es ((8 + 2 - 4) ** 2 * 5 + 8 + 7 / 2 - 30 * 5)  : {p5 : ,} ')
+print(f' El resultado de "n"  es igual a   : {n : ,} ')
+# print de resultados de m
+print(f' El resultado de "m"  en la primera parte es    z ** 2 : {p6 : ,} ')
+print(f' El resultado de "m"  final es   z ** 2 * 3 + n : {p7 : ,} ')
+# print de resultado de y
+print(f' El resultado de la primera parte  z + 2 - n : {p8 : ,} ')
+print(f' El resultado de la segunda parte  (z + 2 - n) ** 2 : {p9 : ,} ')
+print(f' El resultado de la tercera parte  ((z + 2 - n) ** 2 * m + 8 / 2 - 30) : {p10 : ,} ')
+print(f' El resultado de la cuarta parte (((z + 2 - n) ** 2 * m + 8 / 2 - 30) / 2 * 5 - 3)  : {p11 : ,} ')
+print(f' El resultado de la quinta parte  (((z + 2 - n) ** 2 * m + 8 / 2 - 30) / 2 * 5 - 3) ** 5  : {p12 : ,} ')
+print(f' El resultado de la septima parte (((z + 2 - n) ** 2 * m + 8 / 2 - 30) / 2 * 5 - 3) ** 5 + 15 : {p13 : ,} ')
+print(f' El resultado de la octava parte ((((z + 2 - n) ** 2 * m + 8 / 2 - 30) / 2 * 5 - 3) ** 5 + 15 * 3 - 9 / 3)  : {p13 : ,} ')
+print(f' El resultado de la novena parte ((((z + 2 - n) ** 2 * m + 8 / 2 - 30) / 2 * 5 - 3) ** 5 + 15 * 3 - 9 / 3) : {p14 : ,} ')
+print(f' El resultado final de "y"  es igual a   : {y : ,} ')
