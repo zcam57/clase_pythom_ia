@@ -347,10 +347,10 @@ print(f'El monto a pagar por cuotas ordinarias los siguientes 20 meses es de   :
 y = ((5 + 2 - 5) ** 2 * 5 + 8 / 2 - 30) / 2 * 5 - 3
 p1 = 5 + 2 - 5
 p2 = p1 ** 2
-p3 = p2 *5
+p3 = p2 * 5
 p4 = p3 + 8/2
 p5 = p4 - 30
-p6 = p5 / 2 
+p6 = p5 / 2
 print(f' El resultado de la primera parte  5 + 2 - 5  : {p1 : ,} ')
 print(f' El resultado de la segunda parte  (5 + 2 - 5) ** 2  : {p2 : ,} ')
 print(f' El resultado de la tercera parte  (5 + 2 - 5) ** 2 * 5  : {p3 : ,} ')
@@ -371,7 +371,7 @@ p2 = p1 ** 2
 p3 = p2 * m + 8 / 2 - 30
 p4 = p3 / 2 * 5 - 3
 p5 = p4 ** 5
-p6 = p5  + 15
+p6 = p5 + 15
 print(f' El resultado de la primera parte  z + 2 - n : {p1 : ,} ')
 print(f' El resultado de la segunda parte  (z + 2 - n) ** 2 : {p2 : ,} ')
 print(f' El resultado de la tercera parte  ((z + 2 - n) ** 2 * m + 8 / 2 - 30) : {p3 : ,} ')
@@ -389,13 +389,13 @@ z = 5
 n = ((8 + 2 - 4) ** 2 * 5 + 8 + 7 / 2 - 30 * 5) / 2 * 5 - 3
 m = z ** 2 * 3 + n
 y = ((((z + 2 - n) ** 2 * m + 8 / 2 - 30) / 2 * 5 - 3) ** 5 + 15 * 3 - 9 / 3) ** 2 - 5 / 4
-#  resultado de n 
+#  resultado de n
 p1 = (8 + 2 - 4)
 p2 = p1 ** 2
 p3 = p2 * 5
-p4 =  p3 8 + 7 / 2
+p4 = p3 + 8 + (7 / 2)
 p5 = p4 - 30 * 5
-# resultado de m 
+# resultado de m
 p6 = z ** 2
 p7 = p6 * 3 + n
 # resultado de y

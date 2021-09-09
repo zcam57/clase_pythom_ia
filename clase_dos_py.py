@@ -148,3 +148,30 @@ elif(cantidad == 1 and cantidad <= 3):
     print(f'El total a pagar es : ${precio: ,} ')
 else:
     print('Ingrese un cantidad válida de camisas ')
+
+# HUA En un supermercado se hace una promoción, mediante la cual el
+# cliente obtiene un descuento dependiendo de un número que se
+# escoge al azar. Si el número escogido es menor que 74 el descuento
+# es del 15% sobre el total de la compra, si es mayor o igual a 74 el
+# descuento es del 20%. Obtener cuanto dinero se le descuenta.
+# selecionar desdes el import IMPORTANE IMPORTANTE
+
+import random
+
+for i in range(1):
+    print(random.randrange(0, 100))
+
+numero = int(input('Ingrese el número que se le dio anteriormente : '))
+precio = float(input('Ingrese el total a pagar de su compra : '))
+if(numero <= 73 and numero >= 0):
+    descuento = precio * 0.15
+    total = precio - descuento
+    print(f'Su descuento es del 15% lo cual equivales: ${descuento: ,}')
+    print(f'Su total a pagar con descuento es de: ${total: ,}')
+elif(numero >= 74 and numero <= 100):
+    descuento = precio * 0.2
+    total = precio - descuento
+    print(f'Su descuento es del 20% lo cual equivales: ${descuento: ,}')
+    print(f'Su total a pagar con descuento es de: ${total: ,}')
+else:
+    print('Digite un número Válido igual o mayor a cero y igual o menor a 100')
