@@ -175,3 +175,23 @@ elif(numero >= 74 and numero <= 100):
     print(f'Su total a pagar con descuento es de: ${total: ,}')
 else:
     print('Digite un número Válido igual o mayor a cero y igual o menor a 100')
+
+# HUA #3 Una compañía de seguros está abriendo un departamento de
+# finanzas y estableció un programa para captar clientes, que conssite
+# en lo siguiente: Si el monto por el que se efectúa la fianza es menor
+# que $50.000 la cuota a pagar será por el 3% del monto, y si el monto
+# es mayor que $50.000 la cuota a pagar será el 2% del monto. La
+# afianzadora desea determinar cual será la cuota que debe pagar al
+# cliente.
+
+monto = float(input('Ingrese el  monto de su pago: '))
+if(monto < 50000 and monto > 0):
+    cuota = monto * 0.03
+    total = monto + cuota
+    print(f'Su cuata a pagar es: ${monto: ,} + 3% dando un total a pagar de: ${total: ,}')
+elif(monto >= 50000):
+    cuota = monto * 0.02
+    total = monto + cuota
+    print(f'Su cuata a pagar es: ${monto: ,} + 2% dando un total a pagar de: ${total: ,}')
+
+
