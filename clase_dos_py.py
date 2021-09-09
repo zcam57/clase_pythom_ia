@@ -127,3 +127,24 @@ else:
     print('EL número de notas no puede ser igual a cero')
 
 # Inicio del Taller
+
+# HUA que calcule el total a pagar por la compra de
+# camisas. Si se compran tres camisas o mas se aplica un descuento
+# del 30% sobre el total de la compra y si son menos de tres camisas
+# un descuento del 10%.
+
+precio = float(input('Digite el precio de la camisa: '))
+cantidad = int(input('Digite la cantidad de camisas que va a comprar: '))
+total = precio * cantidad
+if(cantidad >= 3):
+    valor = total * 0.3
+    precio = total - valor
+    print(f'El descuento es de: ${valor: ,} ')
+    print(f'El total a pagar es : ${precio: ,} ')
+elif(cantidad == 1 and cantidad <= 3):
+    valor = total * 0.1
+    precio = total - valor
+    print(f'El descuento es de: ${valor: ,} ')
+    print(f'El total a pagar es : ${precio: ,} ')
+else:
+    print('Ingrese un cantidad válida de camisas ')
