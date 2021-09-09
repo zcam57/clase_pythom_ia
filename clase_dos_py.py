@@ -125,3 +125,5 @@ if(numero >= 0):
     print(f"la nota definitiva es: {promedio}")
 else:
     print('EL número de notas no puede ser igual a cero')
+
+# Inicio del Taller
