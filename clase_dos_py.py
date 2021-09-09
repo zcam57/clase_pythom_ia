@@ -195,3 +195,30 @@ elif(monto >= 50000):
     print(f'Su cuata a pagar es: ${monto: ,} + 2% dando un total a pagar de: ${total: ,}')
 
 
+# 4 HUA Una fábrica ha sido sometida a un programa de control de
+# contaminación para lo cual se efectúa una revisión de los puntos de
+# contaminación generados por la fábrica. El programa de control de
+# contaminación consiste en medir los puntos que emite la fábrica en
+# cinco días de una semana y si el promedio es superior a los 170
+# puntos entonces tendrá la sanción de parar su producción por una
+# semana y una multa del 50% de las ganancias diarias cuando no se
+# detiene la producción. Si el promedio obtenido de puntos es de 170 o
+# menos entonces no tendrá ni sanción ni multa. El dueño de la fábrica
+# desea saber cuanto dinero perderá después de ser sometido a la
+# revisión.
+
+for i in range(5):
+    puntos = int(input(f'Ingrese los puntos de contaminación del dia {i+1}:  '))
+    valor = valor + puntos
+promedio = valor / 5
+if(promedio > 170):
+    ganancias = float(input('Ingrese cuales son sus ganancias diarias: '))
+    ganancidias = ganancias * 5
+    multa = ganancidias * 0.5
+    perdida = multa + ganancidias
+    print('Como multa por exceder los puntos de contaminación permitidos debe detener su producción por 7 días ')
+    print(f'La multa a pagar por exceder los puntos permitidos es de: ${multa: ,}')
+    print(f'La cantidad de dinero que perderá la empresa es de:  ${perdida: ,}')
+elif(promedio <= 170):
+    print('Su empresa cumple con el promedio de contaminación permitida ')
+valor = 0
