@@ -266,3 +266,33 @@ elif(cantidad >= 10 ):
     print(f'El precio a pagar por la compra de; {cantidad} computadores es:${precio: ,}  - 40% de descuento  es de : ${total: ,}')
 elif(cantidad <= 0):
     print(f'La siguiente cantidad {cantidad} no es valida')
+
+
+# 7 HUA Un proveedor de estéreos ofrece un descuento del 10% sobre el
+# precio sin IVA, de algún aparato si este cuesta $2000 o más. Además,
+# independientemente de esto, ofrece un 5% de descuento si la marca
+# es NOSY. Determinar cuanto pagará, con IVA incluido, un cliente
+# cualquiera por la compra de su aparato. IVA es del 16%.
+
+precio = float(input('Ingrese el precio del estéreo que desea comprar'))
+marca =  input('Digite el nombre de la marca ')
+if(precio >= 2000 and marca != 'nosy'):
+    descuento = precio - (precio * 0.1)
+    total = descuento + (descuento * 0.16)
+    print(f'el precio a pagar sin iva y con un descuento de 10% es de: ${descuento: ,}')
+    print(f'el precio a pagar con  iva de 16$ incluido es de: ${total: ,}')
+elif(precio >= 2000 and marca == 'nosy'):
+    descuento = precio - (precio * 0.15)
+    total = descuento + (descuento * 0.16)
+    print(f'el precio a pagar sin iva y con un descuento del 15% es de: ${descuento: ,}')
+    print(f'el precio a pagar con  iva de 16$ incluido es de: ${total: ,}')
+else:
+    total = precio + (precio * 0.16)
+    print(f'el precio a pagar con  iva de 16$ incluido es de: ${total: ,}')
+
+    
+
+
+
+
+
