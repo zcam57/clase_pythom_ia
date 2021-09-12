@@ -208,7 +208,7 @@ elif(monto >= 50000):
 # revisión.
 
 for i in range(5):
-    puntos = int(input(f'Ingrese los puntos de contaminación del dia {i+1}:  '))
+    puntos = int(input(f'Ingrese los puntos de contaminación del dia {i+1}:'))
     valor = valor + puntos
 promedio = valor / 5
 if(promedio > 170):
@@ -290,9 +290,36 @@ else:
     total = precio + (precio * 0.16)
     print(f'el precio a pagar con  iva de 16$ incluido es de: ${total: ,}')
 
-    
 
+# 8 HUA Una empresa quiere hacer una compra de varias piezas de la misma
+# clase a una fábrica de refacciones. La empresa, dependiendo del
+# monto total de la compra, decidirá que hacer para pagar al fabricante.
+# Si el monto total de la compra excede de $500.000 la empresa tendrá
+# la capacidad de invertir de su propio dinero un 55% del monto de la
+# compra, pedir prestado al banco un 30% y el resto lo pagará
+# solicitando un crédito al fabricante. Si el monto total de la compra no
+# excede de $500.00 la empresa tendrá capacidad de invertir de su
+# propio dinero un 70% y el restante 30% lo pagará solicitando crédito
+# al fabricante. El fabricante cobra por concepto de interes un 20%
+# sobre la cantidad que se le pague a crédito. Obtener la cantidad a
+# inverir, valor del préstamo, valor del crédito y los intereses.
 
-
-
-
+monto = float(input('Digite el monto total de su compra: '))
+if(monto > 500000):
+    invertir = monto * 0.55
+    prestamo = monto * 0.3
+    credito = monto * 0.15
+    interes = credito * 0.2
+    print(f'La cantidad a invertir es de: ${invertir: ,}')
+    print(f'El valor del préstamo es de: ${prestamo: ,}')
+    print(f'El valor de credito a pedir es de: ${credito: ,}')
+    print(f'Los intereses a pagar por el credito es de: ${interes: ,}')
+elif(monto <= 500000 and monto > 0):
+    invertir = monto * 0.7
+    credito = monto * 0.3
+    interes = credito * 0.2
+    print(f'La cantidad a invertir es de: ${invertir: ,}')
+    print(f'El valor de credito a pedir es de: ${credito: ,}')
+    print(f'Los intereses a pagar por el credito es de: ${interes: ,}')
+else:
+    print('Ingrese un monto valido ')
