@@ -340,3 +340,19 @@ elif(numero1 > numero2):
 else:
     suma = numero1 + numero2
     print(f'La suma de {numero1} + {numero2} es igual a {suma}')
+
+# 10 HUA Leer tres números diferentes e imprimir el número mayor de los
+# tres
+
+numero1 = int(input('Digite un numero: '))
+numero2 = int(input('Digite un numero: '))
+numero3 = int(input('Digite un numero: '))
+if(numero1 > numero2):
+    if(numero1 > numero3):
+        print(f'el numero {numero1} es el mayor de los tres numeros')
+    else:
+        print(f'el numero {numero3} es el mayor de los tres numeros')
+elif(numero2 > numero3):
+    print(f'el numero {numero2} es el mayor de los tres numeros')
+else:
+    print(f'el numero {numero3} es el mayor de los tres numeros')
