@@ -323,3 +323,20 @@ elif(monto <= 500000 and monto > 0):
     print(f'Los intereses a pagar por el credito es de: ${interes: ,}')
 else:
     print('Ingrese un monto valido ')
+
+
+# 9 HUA . Leer 2 números; si son iguales que lo multiplique, si el primero es
+# mayor que el segundo que los reste y sino que los sume
+
+numero1 = int(input('Digite un numero: '))
+numero2 = int(input('Digite un numero: '))
+
+if(numero1 == numero2):
+    multiplicacion = numero1 * numero2
+    print(f'La multiplicacion de {numero1} * {numero2} es igual a {multiplicacion}')
+elif(numero1 > numero2):
+    resta = numero1 - numero2
+    print(f'La resta de {numero1} - {numero2} es igual a {resta}')
+else:
+    suma = numero1 + numero2
+    print(f'La suma de {numero1} + {numero2} es igual a {suma}')
