@@ -25,6 +25,7 @@ for valor in c:
     print(valor)
 
 a[0] = 7
+a = []
 print(b[2])
 print(c[2][1])
 print(c[3][1][1])
@@ -50,6 +51,7 @@ print(c[3][1][:2])
 # Tipos de datos INMUTABLE y ordenado
 
 a = (1, 2, 3, 4)
+a = ()
 print(a[1])
 a = (2, 3, 4)
 b = (2, True, 'Hola', 3.4)
@@ -60,6 +62,7 @@ c = (2, [3, 4], ['Hola', 'Mundo'], [2.3, [2.4, 2.5], 2.5, 2.6])
 # Set
 # Mutable pero NO ordenado
 a = {1, 2, 3, 4}
+a = set()
 print(a[1])
 a = {2, 3, 4}
 b = {2, True, 'Hola', 3.4}
@@ -68,7 +71,7 @@ c = {2, [3, 4], ['Hola', 'Mundo'], [2.3, [2.4, 2.5], 2.5, 2.6]}  # no permite en
 
 # Diccionario
 # Mutable y No  ordenado
-
+a = {}
 a = {'nombre': 'Mac', 'apellido': 'Perez'}
 a = {1: 'Mac',  2: 'Perez'}
 
@@ -89,3 +92,71 @@ for valor in a.items():
 
 for llave, valor in a.items():
     print(f'Llave: {llave}, Valor: {valor}')
+
+
+# Funciones
+
+def nombre_funcion():
+    pass
+
+
+def saludar():
+    print('Hola mundo')
+
+
+def saludar(nombre):
+    print(f'Hola {nombre}')
+
+
+# Pythom no permite la Sobrecarga de métodos
+
+# Parametro Opcionales
+
+def saludar(nombre='Mundo'):
+    print(f'Hola {nombre}')
+
+
+def saludar(nombre, apellido=""):
+    print(f'Hola {nombre} {apellido}')
+
+
+def saludar(nombre="Mundo", apellido=""):
+    print(f'Hola {nombre} {apellido}')
+
+# No puedo tener un parametro obligatorio después de un
+# parametro opcional
+def saludar(nombre, apellido="", segundo_apellido):
+    print(f'Hola {nombre} {apellido}')
+
+
+# Parámetro ilimitados
+
+def saludar(*nombres, apellido=""):
+    for nombres in nombres:
+        print(f'Hola {nombres}')
+    print(f'apellido {apellido}')
+
+
+def saludar(**nombres):
+    print({nombres})
+
+
+def resta(a, b):
+    print(a - b)
+
+
+def operaciones(a, b):
+    suma = a + b
+    resta = a - b
+    mult = a * b
+    div = a / b
+    return suma, resta, mult, div
+
+
+resultados = operaciones(4, 5)
+
+suma, res, mul, div = operaciones(4, 5)
+
+suma, _, _, div = operaciones(4, 5)
+
+# while(condicion):
