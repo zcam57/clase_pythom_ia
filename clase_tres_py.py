@@ -66,4 +66,26 @@ b = {2, True, 'Hola', 3.4}
 c = {2, [3, 4], ['Hola', 'Mundo'], [2.3, [2.4, 2.5], 2.5, 2.6]}  # no permite en su interior arrays
 
 
+# Diccionario
+# Mutable y No  ordenado
 
+a = {'nombre': 'Mac', 'apellido': 'Perez'}
+a = {1: 'Mac',  2: 'Perez'}
+
+a['nombre']
+
+
+for valor in a:
+    print(valor)
+
+for valor in a.values():
+    print(valor)
+
+for valor in a.keys():
+    print(valor)
+
+for valor in a.items():
+    print(valor)
+
+for llave, valor in a.items():
+    print(f'Llave: {llave}, Valor: {valor}')
