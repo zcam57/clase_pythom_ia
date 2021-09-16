@@ -199,3 +199,64 @@ print(f'Ingresaron: {rosa} carros con calcomanía rosa')
 print(f'Ingresaron: {roja} carros con calcomanía roja')
 print(f'Ingresaron: {verde} carros con calcomanía verde')
 print(f'Ingresaron: {azul} carros con calcomanía azul')
+
+#  Un Zoólogo pretende determinar el porcentaje de animales que hay en las
+# siguiente categorias de edades: 0 a 1 año, de mas de 1 año y menos de 3 y
+# de 3 o mas años. El zoológico todavía no está seguro del animal que va
+# estudiar. Si se decide por elefantes solo tomará una muestra de 20 de ellos;
+# si se decide por jirafas, tomara 15 de muestras y si son chompancés tomará
+# 40.
+rango = 0  # rango de edad de 0 -1
+rango2 = 0  # rango de edad  >1 y <3
+rango3 = 0  # rango de edad >3
+porcentaje = 0
+porcentaje2 = 0
+porcentaje3 = 0
+animal = input('Que animal va estudiar: elefante, jirafas, chimpancés:  ')
+if(animal == 'elefante'):
+    for x in range(2):
+        edad = int(input(f'Ingrese la edad del elefante #{x+1}: '))
+        if(edad >= 0 and edad <= 1):
+            rango = rango + 1
+        elif(edad > 1 and edad < 3):
+            rango2 = rango2 + 1
+        elif(edad >= 3):
+            rango3 = rango3 + 1
+    porcentaje = rango / 2
+    porcentaje2 = rango2 / 2
+    porcentaje3 = rango3 / 2
+    print(f'EL promedio de elefantes con una edad de  0 a 1 año es {porcentaje}')
+    print(f'EL promedio de elefantes con una edad de de mas de 1 año y menos de 3 {porcentaje2}')
+    print(f'EL promedio de elefantes con una edad de de 3 o mas años {porcentaje3}')
+elif(animal == 'jirafas'):
+    for x in range(5):
+        edad = int(input(f'Ingrese la edad de las jirafa  #{x+1}: '))
+        if(edad >= 0 and edad <= 1):
+            rango = rango + 1
+        elif(edad > 1 and edad < 3):
+            rango2 = rango2 + 1
+        elif(edad >= 3):
+            rango3 = rango3 + 1
+    porcentaje = rango / 5
+    porcentaje2 = rango2 / 5
+    porcentaje3 = rango3 / 5
+    print(f'EL promedio de Jirafas con una edad de  0 a 1 año es {porcentaje: ,}')
+    print(f'EL promedio de Jirafas con una edad de de mas de 1 año y menos de 3 {porcentaje2: ,}')
+    print(f'EL promedio de Jirafas con una edad de de 3 o mas años {porcentaje3: ,}')
+elif(animal == 'chimpances'):
+    for x in range(4):
+        edad = int(input(f'Ingrese la edad del Chimpancé #{x+1}: '))
+        if(edad >= 0 and edad <= 1):
+            rango = rango + 1
+        elif(edad > 1 and edad < 3):
+            rango2 = rango2 + 1
+        elif(edad >= 3):
+            rango3 = rango3 + 1
+    porcentaje = rango / 4
+    porcentaje2 = rango2 / 4
+    porcentaje3 = rango3 / 4
+    print(f'EL promedio de chimpancés con una edad de  0 a 1 año es {porcentaje}')
+    print(f'EL promedio de Chimpancés con una edad de de mas de 1 año y menos de 3 {porcentaje2}')
+    print(f'EL promedio de Chimpanc´s con una edad de de 3 o mas años {porcentaje3}')
+else:
+    print('El animal ingresado no es valido')
