@@ -163,3 +163,39 @@ suma, _, _, div = operaciones(4, 5)
 
 
 # Commit Inicial
+
+
+# . El departamento de Seguridad de Transito de Barranquilla, desea saber de
+# los n autos que entrar a la ciudad, cuantos entran con calcomanía de cada
+# color. Conociendo el último digito de la placa de cada automóvil se puede
+# determinar el color de la calcomanía utilizando la siguiente relación:
+# DIGITO COLOR
+# 1 o 2 Amarilla
+# 3 o 4 Rosa
+# 5 o 6 Roja
+# 7 u 8 Verde
+# 9 o 0 Azul
+
+amarilla = 0
+rosa = 0
+roja = 0
+verde = 0
+azul = 0
+cantidad = int(input('Cuantos autos ingresaron a la ciudad : '))
+for x in range(cantidad):
+    placa = int(input('Digite el ultimo numero de su placa: '))
+    if(placa == 1 or placa == 2):
+        amarilla = amarilla + 1
+    elif(placa == 3 or placa == 4):
+        rosa = rosa + 1
+    elif(placa == 5 or placa == 6):
+        roja = roja + 1
+    elif(placa == 7 or placa == 8):
+        verde = verde + 1
+    elif(placa == 9 or placa == 0):
+        azul = azul + 1
+print(f'Ingresaron: {amarilla} carros con calcomanía amarilla')
+print(f'Ingresaron: {rosa} carros con calcomanía rosa')
+print(f'Ingresaron: {roja} carros con calcomanía roja')
+print(f'Ingresaron: {verde} carros con calcomanía verde')
+print(f'Ingresaron: {azul} carros con calcomanía azul')
