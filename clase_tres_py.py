@@ -279,3 +279,25 @@ for x in range(cantidad):
         print(f'el salario del trabajador es de: ${salario: ,}')
     else:
         print('Las horas de trabajo no pueden ser igual a cero')
+
+# Calcular el promedio de edades de hombres, mujeres y de todo un grupo
+# de alumnos.
+acumulador = 0  # acumulador de edad hombres
+cantidad = 0  # contador de hombre
+acumulador2 = 0  # acumulador de edad mujeres
+cantidad2 = 0  # contador de mujeres
+alumnos = int(input('Ingrese la cantidad de alumnos: '))
+for x in range(alumnos):
+    genero = input('El estudiante es Hombre o Mujer: ')
+    if(genero == 'hombre'):
+        edad = int(input('Ingrese su edad: '))
+        acumulador = acumulador + edad
+        cantidad = cantidad + 1
+    elif(genero == 'mujer'):
+        edad = int(input('Ingrese su edad: '))
+        acumulador2 = acumulador2 + edad
+        cantidad2 = cantidad2 + 1
+promedio = acumulador / cantidad
+promedio2 = acumulador2 / cantidad2
+print(f'El promedio de edad de los alumnos hombres es de  {promedio} ')
+print(f'El promedio de edad de los alumnass mujeres es de  {promedio2} ')
