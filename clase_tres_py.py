@@ -301,3 +301,13 @@ promedio = acumulador / cantidad
 promedio2 = acumulador2 / cantidad2
 print(f'El promedio de edad de los alumnos hombres es de  {promedio} ')
 print(f'El promedio de edad de los alumnass mujeres es de  {promedio2} ')
+
+# Encontrar el menor valor de un conjunto de n números dados
+
+menor = 999
+cantidad = int(input('Ingrese la cantidad de números a ingresar '))
+for x in range(cantidad):
+    numero = int(input('Ingrese un número '))
+    if(numero < menor):
+        menor = numero
+print(f'El numero menor de todos los ingresados es: {menor}')
