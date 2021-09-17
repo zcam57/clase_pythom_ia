@@ -260,3 +260,22 @@ elif(animal == 'chimpances'):
     print(f'EL promedio de Chimpanc´s con una edad de de 3 o mas años {porcentaje3}')
 else:
     print('El animal ingresado no es valido')
+
+# Una empresa se requiere calcular el salario semanal de cada uno de los n
+# obreros que laboran en ella. El salario se obtiene de la siguiente forma:
+# a. Si el obrero trabaja 40 horas o menos se le paga $20 por hora
+# b. Si trabaja mas de 40 horas se le paga $20 por cada una de
+# las primeras 40 horas y $25 por cada hora extra.
+
+cantidad = int(input('Ingrese la cantidad de trabajadores de su empresa: '))
+for x in range(cantidad):
+    horas = int(input('Ingrese la cantidad de horas trabajadas  esta semana:'))
+    if(horas <= 40 and horas > 0):
+        salario = 20 * horas
+        print(f'el salario del trabajador es de: ${salario: ,}')
+    elif(horas > 40):
+        extras = horas - 40
+        salario = (40 * 20) + (extras * 25)
+        print(f'el salario del trabajador es de: ${salario: ,}')
+    else:
+        print('Las horas de trabajo no pueden ser igual a cero')
