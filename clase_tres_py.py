@@ -311,3 +311,29 @@ for x in range(cantidad):
     if(numero < menor):
         menor = numero
 print(f'El numero menor de todos los ingresados es: {menor}')
+
+# Cinco miembros de un club contra la obesidad desean saber cuanto han
+# bajado o subido de peso desde la última vez que se reunieron. Para esto se
+# debe realizar un ritual de pesaje en donde cada uno se pesa en diez
+# básculas distintas para así tener el pormedio mas exacto de su peso. Si
+# existe diferencia positiva entre este promedio de peso y el peso de la última
+# vez que se reunieron, significa que subieron de peso. Pero si la diferencia
+# es negativa, significa que bajaron. Lo que el problema requere es que por
+# cada persona se imprima un letrero que diga: “SUBIÓ” o “BAJÓ” y la
+# cantidad de kilos que subió o bajó de peso.
+
+for x in range(5):
+    peso = 0
+    bascula = 0
+    promedio = 0
+    kilos = 0
+    peso = int(input('Ingrese su ultimo peso: '))
+    for y in range(10):
+        pesaje = int(input(f'Ingrese su peso en la maquina numero {y+1}: '))
+        bascula = bascula + pesaje
+    promedio = bascula / 10
+    kilos = promedio - peso
+    if(peso < promedio):
+        print(f' Subió  : {kilos} kilos')
+    elif (peso > promedio):
+        print(f' Bajó  : {kilos} kilos')
