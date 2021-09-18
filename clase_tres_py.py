@@ -411,22 +411,51 @@ for x in range(100):
     if(valor > 0 and valor < 20000000):
         comision = valor * 0.1
         print(f'El trabajador numero {x+1} vendio en total: ${valor: ,}')
-        print(f'La comison que le corresponde al trabajador numero {x+1} por un 10% de lo vendido es de: ${comision: ,}')
+        print(f'La comisión que le corresponde al trabajador numero {x+1} por un 10% de lo vendido es de: ${comision: ,}')
     elif(valor >= 20000000 and valor < 40000000):
         comision = valor * 0.15
         print(f'El trabajador numero {x+1} vendio en total: ${valor: ,}')
-        print(f'La comison que le corresponde al trabajador numero {x+1}  por un 15% de lo vendido  es de: ${comision: ,}')
+        print(f'La comisión que le corresponde al trabajador numero {x+1}  por un 15% de lo vendido  es de: ${comision: ,}')
     elif(valor >= 40000000 and valor < 80000000):
         comision = valor * 0.2
         print(f'El trabajador numero {x+1} vendio en total: ${valor: ,}')
-        print(f'La comison que le corresponde al trabajador numero {x+1}  por un 20% de lo vendido  es de: ${comision: ,}')
+        print(f'La comisión que le corresponde al trabajador numero {x+1}  por un 20% de lo vendido  es de: ${comision: ,}')
     elif(valor >= 80000000 and valor < 160000000):
         comision = valor * 0.25
         print(f'El trabajador numero {x+1} vendio en total: ${valor: ,}')
-        print(f'La comison que le corresponde al trabajador numero {x+1}  por un 25% de lo vendido  es de: ${comision: ,}')
+        print(f'La comisión que le corresponde al trabajador numero {x+1}  por un 25% de lo vendido  es de: ${comision: ,}')
     elif(valor >= 160000000):
         comision = valor * 0.30
         print(f'El trabajador numero {x+1} vendio en total: ${valor: ,}')
-        print(f'La comison que le corresponde al trabajador numero {x+1} por un 30% de lo vendido  es de: ${comision: ,}')
+        print(f'La comisión que le corresponde al trabajador numero {x+1} por un 30% de lo vendido  es de: ${comision: ,}')
     else:
         print(f'Ingrese un valor valido')
+
+
+# La empresa Encuestas S.A desea crear una función que les permita
+# conocer de los 50.000 votos obtenidos por 3 candidatos, cual de estos fue
+# el ganador o indicar si hubo empate y la cantidad de votos obtenidos.
+contador = 0
+contador2 = 0
+contador3 = 0
+for x in range(5):
+    voto =  input('Ingrese el nombre por el candidato que desara votar 1-Juan, 2-Diego, 3-Pedro: ')
+    if(voto == 'juan'):
+        contador = contador + 1
+    elif(voto == 'diego'):
+        contador2 = contador2 + 1
+    elif(voto == 'pedro'):
+        contador3 = contador3 + 1
+if(contador > contador2):
+    if(contador > contador3):
+        print(f'El candidato Juan gano con: {contador} votos')
+        print(f'Frente a los {contador2} de Diego y los {contador3} de Pedro')
+    else:
+        print(f'El candidato Pedor gano con: {contador3} votos')
+        print(f'Frente a los {contador} de Juan y los {contador2} de Diego')    
+elif(contador2 > contador3):
+    print(f'El candidato Diego gano con: {contador2} votos' )
+    print(f'Frente a los {contador} votos de Juan y los {contador3} votos de Pedro')
+else:
+    print(f'El candidato Pedor gano con: {contador3} votos')
+    print(f'Frente a los {contador} de Juan y los {contador2} de Diego')
