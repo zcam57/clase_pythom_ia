@@ -393,3 +393,40 @@ for x in range(5):
     else:
         print('Usted es menor de 5 años y no puede ingresar al teatro')
 print(f'EL dinero dejado de recibir por descuentos es un total de: ${perdida: ,}')
+
+# Kia Autos premia anualmente a sus mejores vendedores de acuerdo a la
+# siguiente tabla:
+# Valor vendido  Comisión
+# Menor o igual que 20 Millones - 10%
+# Mayor de 20 Millones y menor de 40 Millones - 15%
+# Mayor o igual de 40 Millones y menor de 80 Millones - 20%
+# Mayor o igual de 80 millones y menor de 160 Millones - 25%
+# De 160 Millones en adelante - 30%
+# Realice un método que diga cuanto vendió y la comisión de los 100
+# vendedores que tiene la empresa
+
+
+for x in range(100):
+    valor = float(input('Ingrese el monto que vendio en todo el año: '))
+    if(valor > 0 and valor < 20000000):
+        comision = valor * 0.1
+        print(f'El trabajador numero {x+1} vendio en total: ${valor: ,}')
+        print(f'La comison que le corresponde al trabajador numero {x+1} por un 10% de lo vendido es de: ${comision: ,}')
+    elif(valor >= 20000000 and valor < 40000000):
+        comision = valor * 0.15
+        print(f'El trabajador numero {x+1} vendio en total: ${valor: ,}')
+        print(f'La comison que le corresponde al trabajador numero {x+1}  por un 15% de lo vendido  es de: ${comision: ,}')
+    elif(valor >= 40000000 and valor < 80000000):
+        comision = valor * 0.2
+        print(f'El trabajador numero {x+1} vendio en total: ${valor: ,}')
+        print(f'La comison que le corresponde al trabajador numero {x+1}  por un 20% de lo vendido  es de: ${comision: ,}')
+    elif(valor >= 80000000 and valor < 160000000):
+        comision = valor * 0.25
+        print(f'El trabajador numero {x+1} vendio en total: ${valor: ,}')
+        print(f'La comison que le corresponde al trabajador numero {x+1}  por un 25% de lo vendido  es de: ${comision: ,}')
+    elif(valor >= 160000000):
+        comision = valor * 0.30
+        print(f'El trabajador numero {x+1} vendio en total: ${valor: ,}')
+        print(f'La comison que le corresponde al trabajador numero {x+1} por un 30% de lo vendido  es de: ${comision: ,}')
+    else:
+        print(f'Ingrese un valor valido')
