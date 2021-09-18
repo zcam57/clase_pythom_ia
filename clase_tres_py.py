@@ -337,3 +337,28 @@ for x in range(5):
         print(f' Subió  : {kilos} kilos')
     elif (peso > promedio):
         print(f' Bajó  : {kilos} kilos')
+
+# 7 En un supermercado una ama de casa pone en su carrito los artículos que
+# va tomando de los estantes. La señora quiere asegurarse de que el cajero
+# le cobre bien lo que ella ha comprado, por lo que cada vez que toma un
+# artóculo anota su precio junto con la cantidad de artículos iguales que ha
+# tomado y determina cuanto dinero gastará en ese artículo; a esto le suma lo
+# que irá gastando en los demás artículos, hasta que decide que ya tomó
+# todo lo que necesitaba. Ayúdele a esta señora a obtener el total de su
+# compra.
+
+total = 0
+cantidad = int(input('Ingrese la cantidad de articulos que va a comprar: '))
+for x in range(cantidad):
+    precio = float(input('Ingrese el precio del producto: '))
+    iguales = int(input('Ingrese la cantidad de articulos iguales: '))
+    producto = precio * iguales
+    print(f'EL pago por el producto ingresado es de: {producto: ,}')
+    total = total + (precio * iguales)
+print('Ya tomo todos los articulos que necesitaba')
+print(f'EL total a  pagar por sus articulos es de: ${total: ,}')
+
+
+
+
+
