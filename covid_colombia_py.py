@@ -99,3 +99,6 @@ data['Nombre municipio'].value_counts()
 
 # 1. Número de casos de Contagiados en el País
 data.Estado.shape[0]
+
+# 2.Número de Municipios Afectados
+data['Nombre municipio'].value_counts().shape[0]
