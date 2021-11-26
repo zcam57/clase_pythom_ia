@@ -120,9 +120,10 @@ data[(data.Recuperado == 'Fallecido')].shape[0]
 
 # 7. Ordenar de Mayor a menor por tipo de caso (Importado, en estudio,
 #  Relacionado)
-data['Tipo de contagio'].value_counts().sort_values()
+data['Tipo de contagio'].value_counts().sort_values(ascending = False)
 
-
+# 8. Número de departamentos afectados
+data['Nombre departamento'].value_counts().shape[0]
 
 
 
