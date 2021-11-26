@@ -110,3 +110,6 @@ data['Nombre municipio'].value_counts().shape[0]
 data['Ubicación del caso'].replace('CASA', 'Casa', inplace = True)
 data['Ubicación del caso'].replace('casa', 'Casa', inplace = True)
 data[(data['Ubicación del caso'] == 'Casa')].shape[0]
+
+# 5.Número de personas que se encuentran recuperados
+data[(data.Recuperado == 'Recuperado')].shape[0]
