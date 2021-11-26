@@ -95,5 +95,4 @@ barranquilla.groupby('fecha reporte web').size().cumsum().plot()
 
 data['Nombre municipio'].value_counts()
 
-
-
+# Taller INTELIGENCIA ARTIFICIAL TALLER DE MATRICES
