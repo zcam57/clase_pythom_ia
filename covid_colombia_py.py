@@ -102,3 +102,11 @@ data.Estado.shape[0]
 
 # 2.Número de Municipios Afectados
 data['Nombre municipio'].value_counts().shape[0]
+
+# 3.Liste los municipios afectados (sin repetirlos)
+
+
+# 4.Número de personas que se encuentran en atención en casa
+data['Ubicación del caso'].replace('CASA', 'Casa', inplace = True)
+data['Ubicación del caso'].replace('casa', 'Casa', inplace = True)
+data[(data['Ubicación del caso'] == 'Casa')].shape[0]
