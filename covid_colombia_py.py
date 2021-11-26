@@ -125,6 +125,9 @@ data['Tipo de contagio'].value_counts().sort_values(ascending = False)
 # 8. Número de departamentos afectados
 data['Nombre departamento'].value_counts().shape[0]
 
+# 9.Liste los departamentos afectados(sin repetirlos)
+data['Nombre departamento'].value_counts()
+
 
 
 
