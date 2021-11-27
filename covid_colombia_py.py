@@ -157,7 +157,7 @@ data[(data.Recuperado == 'Fallecido')].groupby('Nombre municipio').size().sort_v
 data[(data.Recuperado == 'Recuperado')].groupby('Nombre municipio').size().sort_values(ascending = False).head(10)
 
 # 17. Liste agrupado por departamento y en orden de Mayor a menor las
-# ciudades con mas casos de contagiados
+# ciudades con mas casos de contagiados /comit 17
 data.groupby(['Nombre departamento', 'Nombre municipio']).size().sort_values(ascending = False).head(10)
 
 
