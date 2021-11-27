@@ -160,7 +160,8 @@ data[(data.Recuperado == 'Recuperado')].groupby('Nombre municipio').size().sort_
 # ciudades con mas casos de contagiados /comit 17
 data.groupby(['Nombre departamento', 'Nombre municipio']).size().sort_values(ascending = False).head(10)
 
-
-
+# 18. Número de Mujeres y hombres contagiados por ciudad por
+# departamento
+data.groupby(['Sexo', 'Nombre departamento']).size().sort_values(ascending = False)
 
 
