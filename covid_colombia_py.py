@@ -128,6 +128,10 @@ data['Nombre departamento'].value_counts().shape[0]
 # 9.Liste los departamentos afectados(sin repetirlos)
 data['Nombre departamento'].value_counts()
 
+# 10. Ordene de mayor a menor por tipo de atención
+data['Ubicación del caso'].replace('CASA', 'Casa', inplace = True)
+data['Ubicación del caso'].replace('casa', 'Casa', inplace = True)
+data['Ubicación del caso'].value_counts(ascending = False)
 
 
 
