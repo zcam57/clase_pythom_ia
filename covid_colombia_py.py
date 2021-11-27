@@ -148,4 +148,8 @@ data[(data.Recuperado == 'Recuperado')].groupby('Nombre departamento').size().so
 # contagiados
 data['Nombre municipio'].value_counts(ascending = False).head(10)
 
+# 15. Liste de mayor a menor los 10 municipios con mas casos de
+# fallecidos
+data[(data.Recuperado == 'Fallecido')].groupby('Nombre municipio').size().sort_values(ascending = False).head(10)
+
 
