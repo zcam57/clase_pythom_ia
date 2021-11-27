@@ -133,6 +133,9 @@ data['Ubicación del caso'].replace('CASA', 'Casa', inplace = True)
 data['Ubicación del caso'].replace('casa', 'Casa', inplace = True)
 data['Ubicación del caso'].value_counts(ascending = False)
 
+# 11. Liste de mayor a menor los 10 departamentos con mas casos de
+# contagiados
+data['Nombre departamento'].value_counts(ascending = False).head(10)
 
 
 
