@@ -137,7 +137,8 @@ data['Ubicación del caso'].value_counts(ascending = False)
 # contagiados
 data['Nombre departamento'].value_counts(ascending = False).head(10)
 
-
+# 12. Liste de mayor a menor los 10 departamentos con mas casos de
+data[(data.Estado == 'Fallecido')].groupby('Nombre departamento').size().sort_values(ascending = False).head(10)
 
 
 
