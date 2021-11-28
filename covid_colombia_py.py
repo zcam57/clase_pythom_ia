@@ -186,6 +186,9 @@ data[(data.Recuperado == 'Recuperado')].shape[0]
 data[(data.Recuperado == 'Fallecido')].groupby('Nombre departamento').size().sort_values(ascending = False)
 data[(data.Recuperado == 'Recuperado')].groupby('Nombre departamento').size().sort_values(ascending = False)
 
+# 24. Liste la tasa de mortalidad y recuperación que tiene cada ciudad
+data[(data.Recuperado == 'Fallecido')].groupby('Nombre municipio').size().sort_values(ascending = False)
+data[(data.Recuperado == 'Recuperado')].groupby('Nombre municipio').size().sort_values(ascending = False)
 
 
 
