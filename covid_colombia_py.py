@@ -172,8 +172,9 @@ data.groupby(['Sexo', 'Nombre departamento', 'Edad']).size().sort_values(ascendi
 # procedencia
 data['Nombre del país'].value_counts(ascending = False)
 
-
-
+# 21. Liste de mayor a menor las fechas donde se presentaron mas
+# contagios
+data['Fecha de diagnóstico'].value_counts(ascending = False)
 
 
 
