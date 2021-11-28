@@ -204,5 +204,7 @@ data.Recuperado.value_counts().plot.bar()
 # departamentos con mas casos de contagiados acumulados
 data['Nombre departamento'].value_counts(ascending = False).head(10).plot.bar()
 
-
+# 29. Grafique las curvas de contagio, muerte y recuperación de las 10
+# ciudades con mas casos de contagiados acumulados
+data['Nombre municipio'].value_counts(ascending = False).head(10).plot.bar()
 
