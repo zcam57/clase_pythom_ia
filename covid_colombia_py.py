@@ -181,3 +181,21 @@ data['Fecha de diagnóstico'].value_counts(ascending = False)
 data[(data.Estado == 'Fallecido')].shape[0]
 data[(data.Recuperado == 'Recuperado')].shape[0]
 
+# 23. Liste la tasa de mortalidad y recuperación que tiene cada
+# departamento
+data[(data.Recuperado == 'Fallecido')].groupby('Nombre departamento').size().sort_values(ascending = False)
+data[(data.Recuperado == 'Recuperado')].groupby('Nombre departamento').size().sort_values(ascending = False)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
