@@ -208,3 +208,10 @@ data['Nombre departamento'].value_counts(ascending = False).head(10).plot.bar()
 # ciudades con mas casos de contagiados acumulados
 data['Nombre municipio'].value_counts(ascending = False).head(10).plot.bar()
 
+# 30. Liste de mayor a menor la cantidad de fallecidos por edad en toda
+# Colombia.
+data[(data.Estado == 'Fallecido')].groupby('Edad').size().sort_values(ascending = False)
+
+
+
+
