@@ -193,9 +193,8 @@ data[(data.Recuperado == 'Recuperado')].groupby('Nombre municipio').size().sort_
 # 25. Liste por cada ciudad la cantidad de personas por atención
 data.groupby(['Nombre municipio', 'Estado']).size().sort_values(ascending = False)
 
-
-
-
+# 26. Liste el promedio de edad por sexo por cada ciudad de contagiados
+data.groupby(['Nombre municipio', 'Sexo', 'Edad']).size().sort_values(ascending = False)
 
 
 
