@@ -190,7 +190,8 @@ data[(data.Recuperado == 'Recuperado')].groupby('Nombre departamento').size().so
 data[(data.Recuperado == 'Fallecido')].groupby('Nombre municipio').size().sort_values(ascending = False)
 data[(data.Recuperado == 'Recuperado')].groupby('Nombre municipio').size().sort_values(ascending = False)
 
-
+# 25. Liste por cada ciudad la cantidad de personas por atención
+data.groupby(['Nombre municipio', 'Estado']).size().sort_values(ascending = False)
 
 
 
