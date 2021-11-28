@@ -176,5 +176,8 @@ data['Nombre del país'].value_counts(ascending = False)
 # contagios
 data['Fecha de diagnóstico'].value_counts(ascending = False)
 
-
+# 22. Diga cual es la tasa de mortalidad y recuperación que tiene toda 
+# Colombmia 
+data[(data.Estado == 'Fallecido')].shape[0]
+data[(data.Recuperado == 'Recuperado')].shape[0]
 
