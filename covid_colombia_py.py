@@ -196,7 +196,9 @@ data.groupby(['Nombre municipio', 'Estado']).size().sort_values(ascending = Fals
 # 26. Liste el promedio de edad por sexo por cada ciudad de contagiados
 data.groupby(['Nombre municipio', 'Sexo', 'Edad']).size().sort_values(ascending = False)
 
-
+# 27. Grafique las curvas de contagio, muerte y recuperación de toda
+# Colombia acumulados
+data.Recuperado.value_counts().plot.bar()
 
 
 
