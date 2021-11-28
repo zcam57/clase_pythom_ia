@@ -165,8 +165,8 @@ data.groupby(['Nombre departamento', 'Nombre municipio']).size().sort_values(asc
 data.groupby(['Sexo', 'Nombre departamento']).size().sort_values(ascending = False)
 
 # 19. Liste el promedio de edad de contagiados por hombre y mujeres por
-# ciudad por departamento / falta por hacer 
-data.Edad.value_counts()
+# ciudad por departamento 
+data.groupby(['Sexo', 'Nombre departamento', 'Edad']).size().sort_values(ascending = False).head(10)
 
 # 20. Liste de mayor a menor el número de contagiados por país de
 # procedencia
