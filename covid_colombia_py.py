@@ -216,4 +216,14 @@ data[(data.Estado == 'Fallecido')].groupby('Edad').size().sort_values(ascending 
 
 
 # 32. Haga un gráfico de barras por atención de toda Colombia
-data['Ubicación del caso'].value_counts(ascending = False).head(10).plot.bar()
+data['Ubicación del caso'].value_counts(ascending = False).plot.bar()
+
+# 33. Haga un gráfico de barras por Sexo de toda Colombia
+data.Sexo.value_counts(ascending = False).plot.bar()
+
+
+
+
+
+
+
