@@ -212,6 +212,8 @@ data['Nombre municipio'].value_counts(ascending = False).head(10).plot.bar()
 # Colombia.
 data[(data.Estado == 'Fallecido')].groupby('Edad').size().sort_values(ascending = False)
 
+# 31. Liste el porcentaje de personas por atención de toda Colombia
 
 
-
+# 32. Haga un gráfico de barras por atención de toda Colombia
+data['Ubicación del caso'].value_counts(ascending = False).head(10).plot.bar()
